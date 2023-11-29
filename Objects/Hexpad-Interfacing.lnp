@@ -1,0 +1,3 @@
+".\Objects\Hexpad-Interfacing.obj" 
+TO ".\Objects\Hexpad-Interfacing" 
+PRINT(".\Listings\Hexpad-Interfacing.m51")

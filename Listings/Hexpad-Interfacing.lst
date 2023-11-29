@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  HEXPAD_INTERFACING                                                   11/29/2023 19:56:57 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\Hexpad-Interfacing.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Hexpad-Interfacing.s SET(SMALL) DEBUG PRINT(.\Listings\Hexpad-Interfaci
+                      ng.lst) OBJECT(.\Objects\Hexpad-Interfacing.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 8033              2             SJMP MAIN
+0003                   3     ORG 0003H 
+0003 3107              4             ACALL KEY_GET
+0035                   5     ORG 0035H
+0035                   6             MAIN:
+0035 3100              7             ACALL KEY_INIT 
+0100                   8     ORG 0100H
+0100                   9             KEY_INIT:
+0100 D2AF             10                     SETB EA
+0102 D2A8             11                     SETB EX0
+0104 C288             12                     CLR TCON.0
+0106 22               13                     RET
+0107                  14             KEY_GET:
+0107 E590             15                     MOV A,P1
+0109 F5A0             16                     MOV P2,A
+010B 22               17                     RET
+                      18     END
+A51 MACRO ASSEMBLER  HEXPAD_INTERFACING                                                   11/29/2023 19:56:57 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+EA . . . . . . . .  B ADDR   00A8H.7 A   
+EX0. . . . . . . .  B ADDR   00A8H.0 A   
+KEY_GET. . . . . .  C ADDR   0107H   A   
+KEY_INIT . . . . .  C ADDR   0100H   A   
+MAIN . . . . . . .  C ADDR   0035H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+TCON . . . . . . .  D ADDR   0088H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

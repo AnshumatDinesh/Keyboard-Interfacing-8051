@@ -1,0 +1,58 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    11/29/2023  20:08:02  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\Hexpad-Interfacing.obj TO .\Objects\Hexpad-Interfacing PRINT (.\Listings\Hexpad-In
+>> terfacing.m51)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\Hexpad-Interfacing.obj (HEXPAD_INTERFACING)
+
+
+LINK MAP OF MODULE:  .\Objects\Hexpad-Interfacing (HEXPAD_INTERFACING)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     010CH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Hexpad-Interfacing (HEXPAD_INTERFACING)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        HEXPAD_INTERFACING
+  B:00A8H.7       SYMBOL        EA
+  B:00A8H.0       SYMBOL        EX0
+  C:0107H         SYMBOL        KEY_GET
+  C:0100H         SYMBOL        KEY_INIT
+  C:0035H         SYMBOL        MAIN
+  D:0090H         SYMBOL        P1
+  D:00A0H         SYMBOL        P2
+  D:0088H         SYMBOL        TCON
+  C:0000H         LINE#         2
+  C:0003H         LINE#         4
+  C:0035H         LINE#         7
+  C:0100H         LINE#         10
+  C:0102H         LINE#         11
+  C:0104H         LINE#         12
+  C:0106H         LINE#         13
+  C:0107H         LINE#         15
+  C:0109H         LINE#         16
+  C:010BH         LINE#         17
+  -------         ENDMOD        HEXPAD_INTERFACING
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0012H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=268
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
